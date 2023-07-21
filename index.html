@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book-List</title>
+  <link rel="shortcut icon" href="fav.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+  <div class="container mt-5">
+
+    <h1 class="display-4 text-center">
+      <i class="fas fa-book-open text-primary"></i>
+      My <span class="text-primary">Book</span> List
+    </h1>
+
+    <form id="book-form">
+      <div class="form-group">
+        <label for="title" class="text-primary">Title</label>
+        <input type="text" class="form-control" id="title">
+      </div>
+      <div class="form-group">
+        <label for="author" class="text-primary">Author</label>
+        <input type="text" class="form-control" id="author">
+      </div>
+      <div class="form-group">
+        <label for="isbn" class="text-primary">ISBN#</label>
+        <input type="text" class="form-control" id="isbn">
+      </div>
+      <div class="d-grid gap-2 mt-3">
+        <input type="submit" value="Add Books" class="btn btn-primary">
+      </div>
+    </form>
+    <table class="table mt-5 text-primary">
+
+      <thead>
+        <tr class="text-primary ">
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN#</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
