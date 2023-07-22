@@ -32,10 +32,7 @@ class UI {
   // Delete book from the UI
   static deleteBook(el) {
     if (el.classList.contains('delete')) {
-      if (confirm("Are You Sure?")) {
         el.parentElement.parentElement.remove();
-      }
-
     }
   }
 
